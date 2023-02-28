@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		185D980529727D6B002E2117 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D980429727D6B002E2117 /* Product.swift */; };
+		185D980A29727FEE002E2117 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D980929727FEE002E2117 /* ProductCard.swift */; };
+		185D980D29728AE9002E2117 /* CartButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D980C29728AE8002E2117 /* CartButton.swift */; };
+		185D980F29756F78002E2117 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D980E29756F78002E2117 /* CartView.swift */; };
+		185D98112975719A002E2117 /* CartManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 185D98102975719A002E2117 /* CartManager.swift */; };
+		1863499A2975A99F00316CDC /* ProductRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186349992975A99F00316CDC /* ProductRow.swift */; };
 		1877FA64297196E3008B9DDF /* NishantEcommerceStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877FA63297196E3008B9DDF /* NishantEcommerceStoreApp.swift */; };
 		1877FA66297196E3008B9DDF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1877FA65297196E3008B9DDF /* ContentView.swift */; };
 		1877FA68297196E4008B9DDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1877FA67297196E4008B9DDF /* Assets.xcassets */; };
@@ -14,6 +20,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		185D980429727D6B002E2117 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		185D980929727FEE002E2117 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		185D980C29728AE8002E2117 /* CartButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartButton.swift; sourceTree = "<group>"; };
+		185D980E29756F78002E2117 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		185D98102975719A002E2117 /* CartManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartManager.swift; sourceTree = "<group>"; };
+		186349992975A99F00316CDC /* ProductRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRow.swift; sourceTree = "<group>"; };
 		1877FA60297196E3008B9DDF /* NishantEcommerceStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NishantEcommerceStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1877FA63297196E3008B9DDF /* NishantEcommerceStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NishantEcommerceStoreApp.swift; sourceTree = "<group>"; };
 		1877FA65297196E3008B9DDF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,6 +44,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		185D980329727D56002E2117 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				185D980429727D6B002E2117 /* Product.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		185D980629727FB1002E2117 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				185D980929727FEE002E2117 /* ProductCard.swift */,
+				185D980C29728AE8002E2117 /* CartButton.swift */,
+				186349992975A99F00316CDC /* ProductRow.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		185D980B297287D5002E2117 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1877FA65297196E3008B9DDF /* ContentView.swift */,
+				185D980E29756F78002E2117 /* CartView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		1877FA57297196E3008B9DDF = {
 			isa = PBXGroup;
 			children = (
@@ -52,9 +91,12 @@
 			isa = PBXGroup;
 			children = (
 				1877FA63297196E3008B9DDF /* NishantEcommerceStoreApp.swift */,
-				1877FA65297196E3008B9DDF /* ContentView.swift */,
+				185D980B297287D5002E2117 /* Views */,
+				185D980629727FB1002E2117 /* Components */,
+				185D980329727D56002E2117 /* Models */,
 				1877FA67297196E4008B9DDF /* Assets.xcassets */,
 				1877FA69297196E4008B9DDF /* Preview Content */,
+				185D98102975719A002E2117 /* CartManager.swift */,
 			);
 			path = NishantEcommerceStore;
 			sourceTree = "<group>";
@@ -137,8 +179,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				185D980F29756F78002E2117 /* CartView.swift in Sources */,
 				1877FA66297196E3008B9DDF /* ContentView.swift in Sources */,
+				185D98112975719A002E2117 /* CartManager.swift in Sources */,
 				1877FA64297196E3008B9DDF /* NishantEcommerceStoreApp.swift in Sources */,
+				1863499A2975A99F00316CDC /* ProductRow.swift in Sources */,
+				185D980529727D6B002E2117 /* Product.swift in Sources */,
+				185D980A29727FEE002E2117 /* ProductCard.swift in Sources */,
+				185D980D29728AE9002E2117 /* CartButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
